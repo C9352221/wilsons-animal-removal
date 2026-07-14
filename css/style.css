@@ -193,3 +193,7 @@ footer .small { font-size: 0.82rem; opacity: 0.6; }
 .form-status.err { color: #c0392b; }
 .contact-or { margin: 6px 0 18px; text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.85rem; font-weight: 700; opacity: 0.85; }
 @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; gap: 0; } .estimate-form { padding: 24px; } }
+
+/* 3-column address row (Street handled full-width above) */
+.form-row-3 { display: grid; grid-template-columns: 2fr 0.8fr 1fr; gap: 18px; }
+@media (max-width: 600px) { .form-row-3 { grid-template-columns: 1fr 1fr; } }
