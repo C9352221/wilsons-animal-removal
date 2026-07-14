@@ -177,3 +177,19 @@ footer { background: var(--black); color: rgba(255,255,255,0.75); padding: 40px 
 footer .container { display: flex; flex-direction: column; gap: 12px; }
 footer a { color: var(--orange); }
 footer .small { font-size: 0.82rem; opacity: 0.6; }
+
+/* ---- Estimate form (added for intake w/ full address) ---- */
+.estimate-form { max-width: 640px; margin: 0 auto 8px; background: var(--white); color: var(--black); padding: 34px; border-radius: 8px; box-shadow: var(--shadow-lg); text-align: left; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.estimate-form .field { margin-bottom: 18px; display: flex; flex-direction: column; }
+.estimate-form label { font-family: 'Inter', sans-serif; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.1em; font-weight: 700; color: var(--gray-700); margin-bottom: 7px; }
+.estimate-form input, .estimate-form select, .estimate-form textarea { font-family: 'Inter', sans-serif; font-size: 1rem; padding: 12px 14px; border: 1px solid #d5d5d5; border-radius: 6px; background: #fff; color: var(--black); width: 100%; box-sizing: border-box; }
+.estimate-form textarea { resize: vertical; }
+.estimate-form input:focus, .estimate-form select:focus, .estimate-form textarea:focus { outline: none; border-color: var(--orange); box-shadow: 0 0 0 3px var(--orange-light); }
+.estimate-form ::placeholder { color: var(--gray-500); }
+.form-submit { width: 100%; margin-top: 6px; }
+.form-status { margin: 14px 0 0; font-weight: 600; text-align: center; font-size: 0.95rem; }
+.form-status.ok { color: #1a7f37; }
+.form-status.err { color: #c0392b; }
+.contact-or { margin: 6px 0 18px; text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.85rem; font-weight: 700; opacity: 0.85; }
+@media (max-width: 600px) { .form-row { grid-template-columns: 1fr; gap: 0; } .estimate-form { padding: 24px; } }
